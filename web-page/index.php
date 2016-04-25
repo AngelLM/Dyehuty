@@ -15,13 +15,38 @@
 
 <form name="formulario" id="formulario" action="" method="POST">
 
-<datalist id="lista">
+<!--<datalist id="lista">
         <option value="azul">
         <option value="rojo">
         <option value="amarillo">
         <option value="negro">
         <option value="verde">
-    </datalist>
+    </datalist>-->
+<datalist id="lista"></datalist>
+
+<?php
+$file = fopen("1.txt", "r") or exit("Unable to open file!");
+//Output a line of the file until the end is reached
+$numOptionPHP=0;
+$arrayPHP[] = array();
+while(!feof($file)){
+  $arrayPHP[$numOptionPHP]= fgets($file);
+  $numOptionPHP++;
+}
+fclose($file);
+?>
+
+<script type="text/javascript">
+  var array=<?php echo json_encode($arrayPHP);?>;
+
+  var options = '';
+
+  for(var i = 0; i < array.length; i++)
+    options += '<option value="'+array[i]+'" />';
+
+  document.getElementById('lista').innerHTML = options;
+</script>
+
 
 <div id="sections">
   <div class="section">

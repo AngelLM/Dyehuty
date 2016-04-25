@@ -5,6 +5,12 @@ var templatenum = $('#images .image:first').clone();
 //define counter
 var sectionsCount = 1;
 
+
+$( document ).ready(function() {
+    $("#npalabras").text(array.length-1+" palabras disponibles");
+});
+
+
 //add new section
 $('body').on('click', '.addsection', function() {
     sectionsCount++;
@@ -39,3 +45,4 @@ $('body').on('click', '.generate', function() {
     }
     return false;
 });
+

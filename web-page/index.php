@@ -6,8 +6,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-<h1>Dyehuty</h1>
+<div class="wrapper">
+<p id = "titulo">Dyehuty</p>
+<p id = "npalabras">Número de palabras</p>
 
 <form name="formulario" id="formulario" action="" method="POST">
 
@@ -30,37 +31,44 @@ fclose($file);
 
   var options = '';
 
-  for(var i = 0; i < array.length; i++)
+  for(var i = 0; i < array.length-1; i++)
     options += '<option value="'+array[i]+'" />';
 
   document.getElementById('lista').innerHTML = options;
 </script>
 
-<div id=izq>
-<div id="sections">
-  <div class="section">
-    <fieldset>
-        <p>
-            <label for="firstName">Palabra:</label>
-            <input name="firstNam" list="lista" id="firstName" value=""/>
-        </p>
-    </fieldset>
+  <div id="izq">
+  <fieldset>
+    <div id="sections">
+      <div class="section">
+           <p>
+               <label for="firstName">Palabra:</label>
+               <input name="firstNam" list="lista" id="firstName" value=""/>
+           </p>
+      </div>
+    </div>
+  </fieldset>
+  <input type="submit" class='addsection' value="Añadir">
+  <input type="submit" class='remove' value="Eliminar">
+  <input type="submit" class='generate' value="Generar imágenes">
   </div>
+
+  </form>
+
+  <div id="images">
+    <div class="image">
+      <img id="imagen" src="" alt="">
+    </div>
+  </div>
+  <div class="push"></div>
 </div>
-<input type="submit" class='addsection' value="Añadir">
-<input type="submit" class='remove' value="Eliminar">
-<input type="submit" class='generate' value="Generar imágenes">
+<div class="footer">
+  <p>Dyehuty proyect - 2016</p>
 </div>
 
-</form>
-
-<div id="images">
-  <div class="image">
-    <img id="imagen" src="" alt="">
-  </div>
-</div>
 
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
+
 </body>
 </html>

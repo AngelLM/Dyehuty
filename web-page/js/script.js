@@ -7,7 +7,7 @@ var sectionsCount = 1;
 
 
 $( document ).ready(function() {
-    $("#npalabras").text(array.length-1+" palabras disponibles");
+    $("#npalabras").text(array.length+" palabras disponibles");
 });
 
 

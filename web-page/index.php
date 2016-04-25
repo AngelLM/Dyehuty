@@ -19,7 +19,7 @@
 
   var options = '';
 
-  for(var i = 0; i < array.length-1; i++)
+  for(var i = 0; i < array.length; i++)
     options += '<option value="'+array[i]+'"/>';
 
   document.getElementById('lista').innerHTML = options;

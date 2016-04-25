@@ -1,0 +1,5 @@
+Amarillo
+Azul
+Negro
+Rojo
+Verde

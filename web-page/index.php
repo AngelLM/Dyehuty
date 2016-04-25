@@ -3,11 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Dyehuty</title>
-  <style type="text/css">
-  a {
-    color:#679CCA;
-  }
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
@@ -40,7 +36,7 @@ fclose($file);
   document.getElementById('lista').innerHTML = options;
 </script>
 
-
+<div id=izq>
 <div id="sections">
   <div class="section">
     <fieldset>
@@ -54,6 +50,7 @@ fclose($file);
 <input type="submit" class='addsection' value="Añadir">
 <input type="submit" class='remove' value="Eliminar">
 <input type="submit" class='generate' value="Generar imágenes">
+</div>
 
 </form>
 

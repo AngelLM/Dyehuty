@@ -14,25 +14,13 @@
 
 <datalist id="lista"></datalist>
 
-<?php
-$file = fopen("list.txt", "r") or exit("Unable to open file!");
-//Output a line of the file until the end is reached
-$numOptionPHP=0;
-$arrayPHP[] = array();
-while(!feof($file)){
-  $arrayPHP[$numOptionPHP]= fgets($file);
-  $numOptionPHP++;
-}
-fclose($file);
-?>
-
 <script type="text/javascript">
-  var array=<?php echo json_encode($arrayPHP);?>;
+  var array=<?php echo json_encode(file('list.txt', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES));?>;
 
   var options = '';
 
   for(var i = 0; i < array.length-1; i++)
-    options += '<option value="'+array[i]+'" />';
+    options += '<option value="'+array[i]+'"/>';
 
   document.getElementById('lista').innerHTML = options;
 </script>
@@ -42,8 +30,8 @@ fclose($file);
     <div id="sections">
       <div class="section">
            <p>
-               <label for="firstName">Palabra:</label>
-               <input name="firstNam" list="lista" id="firstName" value=""/>
+               <label>Palabra:</label>
+               <input name="entrada" list="lista" id="entrada" value="" style=""/>
            </p>
       </div>
     </div>

@@ -1,5 +1,4 @@
 Amarillo
 Azul
-Negro
-Rojo
 Verde
+Negro

@@ -39,7 +39,10 @@ $('body').on('click', '.remove', function() {
 
 $('body').on('click', '.generate', function() {
     for (var i = 0; i < sectionsCount; i++) {
-        var textthis = $(".section:eq("+i+") #firstName").val();
+        var textthis = $(".section:eq("+i+") #entrada").val();
+        if (array.indexOf(textthis)==-1) {
+            $(".section:eq("+i+") #entrada").attr("style","background:red;");
+        }
         $(".image:eq("+i+") #imagen").attr("src","images/"+textthis+".png");
         $(".image:eq("+i+") #imagen").attr("alt",textthis);
     }

@@ -15,17 +15,10 @@
 
 <form name="formulario" id="formulario" action="" method="POST">
 
-<!--<datalist id="lista">
-        <option value="azul">
-        <option value="rojo">
-        <option value="amarillo">
-        <option value="negro">
-        <option value="verde">
-    </datalist>-->
 <datalist id="lista"></datalist>
 
 <?php
-$file = fopen("1.txt", "r") or exit("Unable to open file!");
+$file = fopen("list.txt", "r") or exit("Unable to open file!");
 //Output a line of the file until the end is reached
 $numOptionPHP=0;
 $arrayPHP[] = array();

@@ -8,6 +8,7 @@
 <body>
 <div class="wrapper">
 <p id = "titulo">Dyehuty</p>
+<p id = "subtitulo">La solución OpenSource para aprender LSE</p>
 <p id = "npalabras">Número de palabras</p>
 
 <form name="formulario" id="formulario" action="" method="POST">
@@ -51,6 +52,7 @@
   <div class="push"></div>
 </div>
 <div class="footer">
+  <a href="proyecto.html">Acerca del proyecto</a> - <a href="licencia.html">Licencia CC-BY-SA</a> - <a href="colaborar.html">Quiero colaborar</a>
   <p>Dyehuty proyect - 2016</p>
 </div>
 

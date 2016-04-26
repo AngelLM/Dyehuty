@@ -4,8 +4,15 @@
 
 #titulo{
 	text-align: center;
-	font-size: 50px;
-	height: 65px;
+	font-size: 60px;
+	height: 75px;
+}
+
+
+#subtitulo{
+	text-align: center;
+	font-size: 20px;
+	height: 35px;
 }
 
 #npalabras{
@@ -46,12 +53,15 @@ fieldset{
 
 .footer{
 	position: relative;
-  margin-top: -50px;
-  height: 20px;
-  padding:5px 0px;
-  clear: both;
-  background: #11999e;
-  text-align: center;
-  color: #e4f9f5;
-
+  	margin-top: -50px;
+  	height: 40px;
+  	padding:5px 0px;
+  	clear: both;
+  	background: #11999e;
+  	text-align: center;
+  	color: #e4f9f5;
+}
+a{
+	  color: #e4f9f5;
+	
 }

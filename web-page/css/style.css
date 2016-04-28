@@ -91,3 +91,7 @@ h2{
 	padding-top: 5px;
 	text-align: justify;
 }
+
+.languages{
+	float: right;
+}

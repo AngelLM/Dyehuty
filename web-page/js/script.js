@@ -40,7 +40,7 @@ $('body').on('click', '.remove', function() {
 $('body').on('click', '.generate', function() {
     for (var i = 0; i < sectionsCount; i++) {
         var textthis = $(".section:eq("+i+") #entrada").val();
-        $(".section:eq("+i+") #entrada").attr("style","background:none;");
+        $(".section:eq("+i+") #entrada").attr("style","background:white;");
         if (array.indexOf(textthis)==-1) {
             $(".section:eq("+i+") #entrada").attr("style","background:red;");
         }

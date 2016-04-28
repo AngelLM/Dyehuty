@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="wrapper">
-<p id = "titulo">Dyehuty</p>
+<p id = "titulo"><a href="index.php">Dyehuty</a></p>
 <p id = "subtitulo">La solución OpenSource para aprender LSE</p>
 <p id = "npalabras">Número de palabras</p>
 

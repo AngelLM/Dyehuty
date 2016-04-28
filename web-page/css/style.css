@@ -8,6 +8,13 @@
 	height: 75px;
 }
 
+#titulo a{	text-decoration: none;
+}
+
+a{
+
+		color:#40514e;
+}
 
 #subtitulo{
 	text-align: center;
@@ -61,7 +68,30 @@ fieldset{
   	text-align: center;
   	color: #e4f9f5;
 }
-a{
+.footer a{
 	  color: #e4f9f5;
+}
+
+.midtext{
+	padding-left: 45px;
+	padding-right: 45px;
+	padding-bottom: 90px;
 	
+}
+
+h1{
+	text-align: center;
+	text-decoration: underline;
+}
+
+h2{
+	padding-top: 20px;
+}
+.textmid{
+	padding-top: 5px;
+	text-align: justify;
+}
+
+.languages{
+	float: right;
 }

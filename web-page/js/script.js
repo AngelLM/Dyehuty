@@ -50,7 +50,7 @@ $('body').on('click', '.generate', function() {
 });
 
 
-//Project English
+//About this project -- English Version
 $('body').on('click', '.en-pr', function() {
     document.getElementById('ab-pr').innerHTML = "About this project";
     document.getElementById('what-pr').innerHTML = "What is Dyehuty?";
